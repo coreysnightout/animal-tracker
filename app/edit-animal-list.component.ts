@@ -6,7 +6,7 @@ import { Animal } from './animal.model';
   selector: 'edit-animal',
   template: `
   <div>
-
+    
   </div>
   `
 })
