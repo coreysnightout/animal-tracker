@@ -1,6 +1,16 @@
 body {
   font-family: sans-serif;
   background-color: beige;
+  margin: 0;
+}
+
+
+
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  background-image: url(./resources/images/bear.png);
+  margin: 20px;
 }
 
 ul {
