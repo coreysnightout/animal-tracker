@@ -1,4 +1,17 @@
 body {
   font-family: sans-serif;
-  background-color: lightyellow;
+  background-color: beige;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  background-color: white;
+  width: 400px;
+  list-style: none;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
 }

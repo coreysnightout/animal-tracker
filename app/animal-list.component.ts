@@ -12,18 +12,19 @@ import { Animal } from './animal.model';
        <option value="youngerAnimals">Animals Younger Than 2 Years</option>
      </select>
 
+     <h3>Animals Tracked</h3>
      <ul>
        <li *ngFor="let currentAnimal of childAnimalList | ageFind:filterByAnimalAge">
        <div class="card">
-        <p>Species: {{currentAnimal.species}}</p>
-        <p>Name: {{currentAnimal.name}}</p>
-        <p>Age: {{currentAnimal.age}}</p>
-        <p>Diet: {{currentAnimal.diet}}</p>
-        <p>Location: {{currentAnimal.location}}</p>
-        <p>Caretakers: {{currentAnimal.caretakers}}</p>
-        <p>Sex: {{currentAnimal.sex}}</p>
-        <p>Likes: {{currentAnimal.likes}}</p>
-        <p>Dislikes: {{currentAnimal.dislikes}}</p>
+        <p><strong><i>Species:</i></strong> {{currentAnimal.species}}</p>
+        <p><strong><i>Name:</i></strong> {{currentAnimal.name}}</p>
+        <p><strong><i>Age:</i></strong> {{currentAnimal.age}}</p>
+        <p><strong><i>Diet:</i></strong> {{currentAnimal.diet}}</p>
+        <p><strong><i>Location:</i></strong> {{currentAnimal.location}}</p>
+        <p><strong><i>Caretakers:</i></strong> {{currentAnimal.caretakers}}</p>
+        <p><strong><i>Sex:</i></strong> {{currentAnimal.sex}}</p>
+        <p><strong><i>Likes:</i></strong> {{currentAnimal.likes}}</p>
+        <p><strong><i>Dislikes:</i></strong> {{currentAnimal.dislikes}}</p>
         </div><button (click)="editButtonHasBeenClicked(currentAnimal)">Edit Animal!</button>
        </li>
      </ul>

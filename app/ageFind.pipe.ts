@@ -28,47 +28,48 @@ export class AgesFindPipe implements PipeTransform {
       return input;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  transform(input: Animal[], chosenAge) {
-    var output: Animal[] = [];
-    if (chosenAge === "youngerAnimals") {
-      for (var i = 0; i < input.length; i++) {
-        if (input[i].age <= 2) {
-          output.push(input[i]);
-        }
-      }
-    }
-  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   transform(input: Animal[], chosenAge) {
+//     var output: Animal[] = [];
+//     if (chosenAge === "youngerAnimals") {
+//       for (var i = 0; i < input.length; i++) {
+//         if (input[i].age <= 2) {
+//           output.push(input[i]);
+//         }
+//       }
+//     }
+//   }
+// }
