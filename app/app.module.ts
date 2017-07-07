@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }   from './app.component';
 import { FormsModule }  from '@angular/forms';
 import { AnimalListComponent } from './animal-list.component';
+import { EditAnimalListComponent } from './edit-animal-list.component';
+import { NewAnimalListComponent } from './new-animal-list.component';
 
 @NgModule({
   imports: [BrowserModule,

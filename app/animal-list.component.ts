@@ -7,13 +7,13 @@ import { Animal } from './animal.model';
   selector: 'animal-list',
   template: `
      <select (change)="onChange($event.target.value)">
-       <option value="EveryAnimal" selected="selected">All of The Animals</option>
+       <option value="everyAnimal" selected="selected">All of The Animals</option>
        <option value="olderAnimals">Animals Older Than 2 Years</option>
        <option value="youngerAnimals">Animals Younger Than 2 Years</option>
      </select>
 
      <ul>
-       <li *ngFor="let currentAnimal of childAnimalList | completeness:filterByAnimalAge">
+       <li *ngFor="let currentAnimal of childAnimalList | ageFind:filterByAnimalAge">
        <div class="card">
         <p>Species: {{currentAnimal.species}}</p>
         <p>Name: {{currentAnimal.name}}</p>
@@ -24,7 +24,7 @@ import { Animal } from './animal.model';
         <p>Sex: {{currentAnimal.sex}}</p>
         <p>Likes: {{currentAnimal.likes}}</p>
         <p>Dislikes: {{currentAnimal.dislikes}}</p>
-         <button (click)="editButtonHasBeenClicked(currentTask)">Edit Animal!</button>
+        </div><button (click)="editButtonHasBeenClicked(currentTask)">Edit Animal!</button>
        </li>
      </ul>
    `
@@ -38,7 +38,7 @@ export class AnimalListComponent {
     this.filterByAnimalAge = optionFromMenu;
   }
 
-  filterByAnimalAge: string = "EveryAnimal";
+  filterByAnimalAge: string = "everyAnimal";
 
   editButtonHasBeenClicked(animalToEdit: Animal) {
   this.clickSender.emit(animalToEdit);
