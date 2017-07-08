@@ -2,7 +2,9 @@ $forest: #aed0b5;
 
 body {
   font-family: sans-serif;
-  background-color: $forest;
+  background-image: url(http://www.hdwallpaper.nu/wp-content/uploads/2015/07/Minions_Wallpaper_004.jpg);
+  background-position: center;
+  // background-color: $forest;
   margin: 0;
 }
 
@@ -27,7 +29,7 @@ h3 {
 .jumbotron {
   display: flex;
   justify-content: center;
-  background-image: url(http://proof.nationalgeographic.com/files/2015/07/NationalGeographic_679001.jpg);
+  background-image: url("../resources/images/header.jpg");
   background-position: center;
   height: 350px;
   margin-top: 20px;
@@ -49,4 +51,10 @@ li {
   padding: 20px;
   margin: 15px;
   border-radius: 5px;
+}
+
+.edit-form {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
 }
