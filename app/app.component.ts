@@ -5,7 +5,6 @@ import { Animal } from './animal.model';
   selector: 'app-root',
   template: `
   <div class="jumbotron">
-    <h1 class="title">Zoo Tracker</h1>
   </div>
   <div class="container">
     <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>

@@ -29,8 +29,8 @@ h3 {
 .jumbotron {
   display: flex;
   justify-content: center;
-  background-image: url("../resources/images/header.jpg");
-  background-position: center;
+  background-image: url("https://github.com/coreysnightout/animal-tracker/blob/master/resources/images/header.jpg?raw=true");
+  background-size: cover;
   height: 350px;
   margin-top: 20px;
   margin-left: 20px;
@@ -51,6 +51,7 @@ li {
   padding: 20px;
   margin: 15px;
   border-radius: 5px;
+  box-shadow: 2px 2px 15px grey;
 }
 
 .edit-form {
