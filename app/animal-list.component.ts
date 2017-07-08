@@ -6,10 +6,7 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'animal-list',
   template: `
-    <div class="jumbotron">
-
-    </div>
-     <select (change)="onChange($event.target.value)">
+     <select class="drop" (change)="onChange($event.target.value)">
        <option value="everyAnimal" selected="selected">All of The Animals</option>
        <option value="olderAnimals">Animals Older Than 2 Years</option>
        <option value="youngerAnimals">Animals Younger Than 2 Years</option>

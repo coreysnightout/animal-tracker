@@ -1,16 +1,41 @@
+$forest: #aed0b5;
+
 body {
   font-family: sans-serif;
-  background-color: beige;
+  background-color: $forest;
   margin: 0;
 }
 
+.title {
+  display: flex;
+  align-self: flex-end;
+}
 
+h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.drop {
+  margin-left: 52px;
+}
 
 .jumbotron {
   display: flex;
   justify-content: center;
-  background-image: url(./resources/images/bear.png);
-  margin: 20px;
+  background-image: url(http://proof.nationalgeographic.com/files/2015/07/NationalGeographic_679001.jpg);
+  background-position: center;
+  height: 350px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 
 ul {
@@ -19,9 +44,9 @@ ul {
 
 li {
   background-color: white;
-  width: 400px;
+  width: 1500px;
   list-style: none;
-  padding: 10px;
-  margin: 20px;
+  padding: 20px;
+  margin: 15px;
   border-radius: 5px;
 }
