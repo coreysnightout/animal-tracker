@@ -6,9 +6,9 @@ import { Animal } from './animal.model';
   selector: 'edit-animal',
   template: `
   <div>
+  <h3>Edit Animal Information</h3>
     <div class="edit-form" *ngIf="childSelectedAnimal">
-      <h3>Edit Animal Information</h3>
-
+      <li class="edit-listing">
       <label>Enter Animal Species</label>
       <input [(ngModel)]="childSelectedAnimal.species">
 
@@ -35,7 +35,8 @@ import { Animal } from './animal.model';
 
       <label>Enter Animal Dislikes</label>
       <input [(ngModel)]="childSelectedAnimal.dislikes">
-      <button (click)="doneButtonClicked()">Done</button>
+      <button class="edit-button" (click)="doneButtonClicked()">Done</button>
+      </li>
     </div>
   </div>
   `

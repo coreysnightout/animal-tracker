@@ -29,7 +29,7 @@ h3 {
 .jumbotron {
   display: flex;
   justify-content: center;
-  background-image: url("https://github.com/coreysnightout/animal-tracker/blob/master/resources/images/header.jpg?raw=true");
+  background-image: url("https://github.com/coreysnightout/animal-tracker/blob/master/resources/images/header2.jpg?raw=true");
   background-size: cover;
   height: 350px;
   margin-top: 20px;
@@ -58,4 +58,29 @@ li {
   display: flex;
   justify-content: flex-start;
   width: 100%;
+  align-items: flex-start;
+  height: 200px;
+}
+
+.edit-listing {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+label {
+
+}
+
+input {
+  height: 30px;
+}
+
+.edit-button {
+  width: 100px;
+  height: 35px;
+  background-color: #5bc0de;
+  border-radius: 5px;
+  border: none;
+  color: white;
 }
