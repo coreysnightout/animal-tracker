@@ -6,7 +6,7 @@
     "corey redding <coreysnightout@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/coreysnightout/animal-tracker",
   "ignore": [
     "**/.*",
     "node_modules",

@@ -48,11 +48,13 @@ h3 {
 ul {
   display: flex;
   margin-left: -40px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 li {
   background-color: white;
-  width: 1500px;
+  width: 300px;
   list-style: none;
   padding: 20px;
   margin: 15px;

@@ -7,13 +7,13 @@ import { Animal } from './animal.model';
   <div class="header">
   </div>
   <div class="container">
+    <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
     <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
 
     <hr>
 
     <edit-animal [childSelectedAnimal]="chosenAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
     <hr>
-    <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
   </div>
   `
 })
