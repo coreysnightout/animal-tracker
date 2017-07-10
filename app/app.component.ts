@@ -4,7 +4,7 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'app-root',
   template: `
-  <div class="jumbotron">
+  <div class="header">
   </div>
   <div class="container">
     <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
@@ -12,6 +12,8 @@ import { Animal } from './animal.model';
     <hr>
 
     <edit-animal [childSelectedAnimal]="chosenAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
+    <hr>
+    <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
   </div>
   `
 })
@@ -34,4 +36,7 @@ export class AppComponent {
       this.chosenAnimal = null;
     }
 
+    addAnimal(newAnimalFromChild: Animal) {
+      this.masterAnimalList.push(newAnimalFromChild);
+    }
 }

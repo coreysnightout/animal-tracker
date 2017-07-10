@@ -6,7 +6,7 @@ import { Animal } from './animal.model';
   selector: 'edit-animal',
   template: `
   <div>
-  <h3>Edit Animal Information</h3>
+  <h3 class="edit-header">Edit Animal Information</h3>
     <div class="edit-form" *ngIf="childSelectedAnimal">
       <li class="edit-listing">
       <label>Enter Animal Species</label>

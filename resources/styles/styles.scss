@@ -26,15 +26,20 @@ h3 {
   margin-left: 52px;
 }
 
-.jumbotron {
+.header {
   display: flex;
   justify-content: center;
+  align-self: center;
   background-image: url("https://github.com/coreysnightout/animal-tracker/blob/master/resources/images/header2.jpg?raw=true");
-  background-size: cover;
-  height: 350px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: auto;
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom:20px;
   color: white;
   text-transform: uppercase;
   border-radius: 5px;
@@ -42,6 +47,7 @@ h3 {
 
 ul {
   display: flex;
+  margin-left: -40px;
 }
 
 li {
@@ -52,6 +58,9 @@ li {
   margin: 15px;
   border-radius: 5px;
   box-shadow: 2px 2px 15px grey;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
 }
 
 .edit-form {
@@ -60,6 +69,7 @@ li {
   width: 100%;
   align-items: flex-start;
   height: 200px;
+  z-index: 5;
 }
 
 .edit-listing {
@@ -83,4 +93,46 @@ input {
   border-radius: 5px;
   border: none;
   color: white;
+  margin-top: 25px;
+}
+
+.list-button {
+  width: 100px;
+  height: 35px;
+  background-color: #5bc0de;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.tracked {
+  background-color: white;
+  padding: 10px;
+  color: #3e4a64;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.new-guy li {
+  display: flex;
+  justify-content: center;
+  width: 98%;
+}
+
+.new-guy-button {
+  width: 100px;
+  height: 35px;
+  background-color: #5bc0de;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+
+.edit-header {
+  background-color: white;
+  padding: 10px;
+  color: #3e4a64;
+  border-radius: 5px;
+  font-weight: 500;
 }

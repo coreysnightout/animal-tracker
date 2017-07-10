@@ -12,7 +12,7 @@ import { Animal } from './animal.model';
        <option value="youngerAnimals">Animals Younger Than 2 Years</option>
      </select>
 
-     <h3>Animals Tracked</h3>
+     <h3 class="tracked">Animals Tracked</h3>
      <ul>
        <li *ngFor="let currentAnimal of childAnimalList | ageFind:filterByAnimalAge">
        <div class="card">
@@ -25,7 +25,7 @@ import { Animal } from './animal.model';
         <p><strong><i>Sex:</i></strong> {{currentAnimal.sex}}</p>
         <p><strong><i>Likes:</i></strong> {{currentAnimal.likes}}</p>
         <p><strong><i>Dislikes:</i></strong> {{currentAnimal.dislikes}}</p>
-        </div><button (click)="editButtonHasBeenClicked(currentAnimal)">Edit Animal!</button>
+      </div><button class="list-button" (click)="editButtonHasBeenClicked(currentAnimal)">Edit Animal!</button>
        </li>
      </ul>
    `
